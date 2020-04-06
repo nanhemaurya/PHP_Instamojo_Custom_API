@@ -1,0 +1,16 @@
+RewriteEngine on
+#RewriteBase /
+RewriteCond %{REQUEST_FILENAME} !-d 
+RewriteCond %{REQUEST_FILENAME}\.php -f 
+RewriteRule ^(.*)$ $1.php
+
+
+#RewriteRule    ^nanhemaurya?$    http://nanhemaurya.net23.net http://localhost/active_session.php?new_session=true
+RewriteRule    ^api/?$    api/error.php
+RewriteRule    ^api/v1/?$    api/error.php
+
+#RewriteRule    ^api/1.1/payment/payment_request/?$    api/v1/payment_request.php
+#RewriteRule    ^api/1.1/payment/payment_response/?$    api/v1/payment_request.php
+#RewriteRule    ^api/1.1/payment/payment_request/?$    api/v1/payment_request.php
+#RewriteRule    ^api/payment_request?$    api/v1/payment_request.php
+
